@@ -10,8 +10,8 @@ window.config(padx=20, pady=20)
 # calculate function
 
 def convertor():
-    to_km = float(input.get()) * 1.6
-    my_label_4.config(text=to_km)
+    to_km = float(input.get()) * 1.609
+    km_label.config(text=to_km)
 
 
 # Label
@@ -27,8 +27,8 @@ my_label_3 = Label(text=" Km", font=("Times new roman", 15,))
 my_label_3.grid(column=2, row=1)
 
 # Result
-my_label_4 = Label(text="0", font=("Times new roman", 15,))
-my_label_4.grid(column=1, row=1)
+km_label = Label(text="0", font=("Times new roman", 15,))
+km_label.grid(column=1, row=1)
 
 # calculate button
 button = Button(text="Calculate", command=convertor)
